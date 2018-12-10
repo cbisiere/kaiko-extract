@@ -338,7 +338,7 @@ main(){
       }
 
       # quick fix for MtGox trade data zip file (extra root folder)
-      [[ "${OPT_TYPE}" == "trade" && "${xchg}" == 'mtgox' ]] && {
+      [[ "${OPT_TYPE}" == "trades" && "${xchg}" == 'mtgox' ]] && {
         mv "${TMP_DIR}/trades_mtgox/mtgox" "${TMP_DIR}/"
         rmdir "${TMP_DIR}/trades_mtgox"
       }
